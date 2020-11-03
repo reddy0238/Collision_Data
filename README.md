@@ -12,4 +12,4 @@ https://www.python.org/downloads/
 
 # Execute the code 
 
-python assignment.py <light_levels_data_absolute_path> <collision_data_absolute_path> <flight_call_data_absolute_path> <output_file_full_path.csv>
+python <absolute_path>/assignment.py <light_levels_data_absolute_path> <collision_data_absolute_path> <flight_call_data_absolute_path> <output_file_full_path.csv>
