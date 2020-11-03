@@ -88,10 +88,10 @@ def writeOutput(final_dataframe,output_file):
     '''
     sorts the DataFrame by "Date" and writes the output to a .csv file
     '''
-    df2["Date"] = pd.to_datetime(df2["Date"])
-    df2 = df2.sort_values(by="Date")
+    final_dataframe["Date"] = pd.to_datetime(final_dataframe["Date"])
+    final_dataframe = final_dataframe.sort_values(by="Date")
     #Let's send the DataFrame to a .csv file. Yo can open .csv file in Microsoft Excel or import it to MySQL database.
-    df2.to_csv(output_file, index = False, header=True)
+    final_dataframe.to_csv(output_file, index = False, header=True)
     print("Successfully written the data to an output file")
 
 def main():
